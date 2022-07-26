@@ -1,0 +1,71 @@
+/* estilos del header */
+header {
+    height: auto;
+}
+
+
+/* navegacion */
+.logo {
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+}
+
+.ul {
+    flex-direction: column;
+    align-items: center;
+    background-color: #2c3e50;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    left: 100%;
+    transition: left 0.3s;
+}
+
+.li {
+    line-height: 70px;
+}
+
+.li_a:hover {
+    background: none;
+    background-color: #034574;
+    transition: 0.5s;
+}
+
+.menu {
+    display: block;
+}
+
+.activo {
+    left: 0;
+}
+
+.menu:focus:not(:focus-visible) {
+    outline: none;
+}
+
+
+
+/* parrafos */
+.p_descripcion {
+    width: 100%;
+}
+
+
+/* div home */
+#home {
+    padding-bottom: 140px;
+}
+
+
+/* estilos del main (contenido)*/
+article {
+    padding-bottom: 0px;
+}
+
+
+/* flex  */
+.main-content-container {
+    flex-wrap: wrap;
+}

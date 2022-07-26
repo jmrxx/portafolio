@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="shortcut icon" href="img/logoVersion3.ico" type="image/x-icon">
+	<title>Portafolio - jmrx</title>
+
+</head>
+
+<body>
+	<header>
+		<nav class="nav">
+			<a href="#" class="logo">JMRX</a>
+			<button class="menu">
+				<i><img src="img/menu.svg" alt="menu"></i>
+			</button>
+			<ul class="ul">
+				<li class="li">
+					<a href="#home" class="li_a">HOME</a>
+				</li>
+				<li class="li">
+					<a href="#tecno" class="li_a">TECNOLOGIAS</a>
+				</li>
+				<li class="li">
+					<a href="#acerca" class="li_a">ACERCA</a>
+				</li>
+				<li class="li">
+					<a href="#contacto" class="li_a">CONTACTO</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div id="home">
+			<div class="container">
+				<h1>Hola soy <span>Jose Mejia</span></h1>
+				<h3>DESAROLLADOR WEB</h3>
+
+				<a class="boton efecto" href="#contacto">Contacto</a>
+			</div>
+		</div>
+	</header>
+
+	<article id="tecno">
+		<div class="container">
+			<h2 class="text-gradient">TECNOLOGIAS</h2>
+			<p class="p_descripcion">Tecnologias que manejo</p>
+
+			<div class='main-content-container'>
+				<div class='container'>
+					<img class="vueltay" src="img/css.svg" alt="css">
+					<figcaption>Css</figcaption>
+
+				</div>
+				<div class='container'>
+					<img class="vueltax" src="img/html.svg" alt="html">
+					<figcaption>Html</figcaption>
+
+				</div>
+				<div class='container'>
+					<img class="zoom" src="img/javascript.svg" alt="javascript">
+					<figcaption>javascript</figcaption>
+
+				</div>
+				<div class='container'>
+					<img class="inzoom" src="img/java.svg" alt="java">
+					<figcaption>Java</figcaption>
+				</div>
+				<div class='container'>
+					<img class="rotacionreverse" src="img/git.svg" alt="git">
+					<figcaption>Git</figcaption>
+
+				</div>
+				<div class='container imgAnimacion'>
+					<img class="rotacion" src="img/linux.png" alt="Linux">
+					<figcaption>Linux</figcaption>
+
+				</div>
+			</div>
+
+		</div>
+
+	</article>
+
+	<article id="acerca">
+		<div class="container">
+			<h2 class="text-gradient">ACERCA</h2>
+			<p class="p_descripcion">Desarollador y Programador web, estudiante en desarollo de aplicaciones web,
+				me gusta la Tecnologia y siempre aprendiendo algo nuevo</p>
+
+
+			<a class="efecto boton" href="csv/csv_jmrx.pdf" target="_blank">CV</a>
+		</div>
+	</article>
+
+	<article id="contacto">
+		<div class="container">
+			<h2 class="text-gradient">CONTACTO</h2>
+			<p class="p_descripcion">Puedes contactarme en</p>
+
+			<div class="main-content-container">
+				<div class="container">
+					<a href="https://github.com/jmrxx" target="_blank">
+						<img class="zoom" src="img/github.svg" alt="Github">
+						<figcaption>Github</figcaption>
+					</a>
+				</div>
+				<div class="container">
+					<a href="https://www.linkedin.com/in/jose-mejia-3ab5a7232/" target="_blank">
+						<img class="zoom" src="img/linkedin.svg" alt="linkedin">
+						<figcaption>Linkedin</figcaption>
+					</a>
+				</div>
+				<div class="container">
+					<a href="https://twitter.com/jmrx_18" target="_blank">
+						<img class="zoom" src="img/twitter.svg" alt="twitter">
+						<figcaption>Twitter</figcaption>
+					</a>
+				</div>
+				<div class="container">
+					<a href="mailto:thos.josemejia@gmail.com">
+						<img class="zoom" src="img/gmail.svg" alt="Gmail">
+						<figcaption>Gmail</figcaption>
+					</a>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<footer>
+		<p>Copyright&copy; 2022 - JMRX. Todos los derechos reservados </p>
+	</footer>
+</body>
+
+</html>
+
+<!-- Cuando hago CLICK en .menu_icon, .nav TOGGLE 'activo') -->
+<script>
+	const menu = document.querySelector(".menu");
+	const nav = document.querySelector(".ul");
+
+	menu.addEventListener("click", () => {
+		nav.classList.toggle("activo");
+
+	});
+</script>
